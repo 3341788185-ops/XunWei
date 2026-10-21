@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#FFF3E6"/>
+  <g fill="none" stroke="#E8955A" stroke-width="6" stroke-linecap="round">
+    <path d="M110 190 a90 60 0 0 0 180 0 Z" fill="#FFE0C2"/>
+    <path d="M140 190 a60 40 0 0 0 120 0" fill="none"/>
+    <path d="M170 140 q10 -18 0 -32 M200 140 q10 -18 0 -32 M230 140 q10 -18 0 -32" stroke="#D97B3F"/>
+  </g>
+  <text x="200" y="255" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#C06A2B">图片加载失败</text>
+</svg>
