@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寻味小站 - 美食智能推荐系统</title>
+  <meta name="description" content="寻味小站——美食智能推荐系统，输入口味关键词，为你智能推荐家常美食、小吃甜品。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍜</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-icon">🍜</span>寻味小站<small>美食智能推荐系统</small></a>
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">首页</a>
+        <a class="nav-link" href="list.html">全部菜品</a>
+        <a class="nav-link" href="random.html">随机选菜</a>
+        <a class="nav-link" href="assistant.html">AI 助手</a>
+        <a class="nav-link" href="forum.html">互动社区</a>
+        <a class="nav-link" href="user.html">个人中心</a>
+      </nav>
+      <div id="navUser"></div>
+    </div>
+  </header>
+
+  <!-- 搜索横幅：口味关键词输入 + 热门口味标签 -->
+  <section class="hero">
+    <div class="container">
+      <h1>今天不知道吃什么？</h1>
+      <p>输入你的口味，让小站为你智能推荐 —— 酸辣 / 清淡 / 香甜 / 想吃辣……</p>
+      <div class="search-box">
+        <input class="search-input" id="searchInput" type="text" maxlength="30"
+               placeholder="试试输入：想吃点辣的、清淡养胃、酸辣开胃…" autocomplete="off">
+        <button class="search-btn" id="searchBtn">智能推荐</button>
+      </div>
+      <div class="hot-tags" id="hotTags">
+        <span class="hot-tag-label">热门口味：</span>
+        <!-- JS 渲染热门口味标签 -->
+      </div>
+      <p style="margin-top: 22px;">
+        <a href="random.html" class="hot-tag" style="font-size: 15px; padding: 8px 24px;">🎲 不知道吃什么？点我随机选一道 →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 推荐结果区 -->
+  <main class="section container">
+    <div class="section-head">
+      <h2 class="section-title" id="resultTitle">为你推荐</h2>
+      <a class="section-link" href="list.html">浏览全部菜品 →</a>
+    </div>
+    <div class="result-count" id="resultCount"></div>
+    <div class="dish-grid" id="dishGrid"><!-- JS 渲染菜品卡片 --></div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      寻味小站 —— 美食智能推荐系统<br>
+      2026 届毕业设计作品 · 网站2431班 · 尹阳
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/recommend.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
